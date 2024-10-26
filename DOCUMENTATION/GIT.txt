@@ -1,0 +1,115 @@
+Для звичайного командного рядка
+dir    показує список папок
+cd     (change directory)  Приклад:  cd Documents <enter> cd NextPapka <enter> cd NextPapka
+cd ..   повертає на рівень назад (пробіл після cd)
+clear   чистить консоль
+
+git config --global user.name "Тут придуманий нік"   -->  команда, якою можна придумати ім'я
+git config --global user.name  --> Для того, щоб глянути свій нік на гіт хаб
+
+git config --global user.email "boba@gmail.com"
+git config --global user.email  -->  Для того щоб глянути свю почту на гіт хаб
+
+GitBush в середині VS CODE
+git --version     перегляд версії гіта
+git --help        показує всі команди гіта
+git init          ініціалізувати парку
+git status        перевірка статусу
+
+-----------------------------------------------------------------------------
+git init
+git add .
+git commit -m " "
+git branch -M main
+git remote add origin https://github.com/MEDOYED/Motion-Wise.git
+git push -u origin main
+-------------------------------------------------------------------------------
+
+git log --> можна подивитись версії комітов
+
+git add <file>               команда для того, щоб гіт ПОЧАВ слідкувати за файлом. Приклад: git add index.html
+git rm --cached <file>       команда дл того, щоб гіт ПЕРЕСТАВ слідкувати за файлом. Приклад: git rm --cached index.html
+git rm --cached -r name_file команда дл того, щоб гіт ПЕРЕСТАВ слідкувати за файлом. Приклад: git rm --cached -r name_file 
+git add .                    команда для того, щоб гіт ПОЧАВ слідкувати за dcsvf файлами.
+
+git commit -m "first commit"    коміт
+
+    +++ ВІДНОВЛЕННЯ ДО ПОПЕРЕДНЬОЇ ВЕРСІЇ ГІТ +++
+git reset --hard 7b83f9a    відкатує версію до потрібної (треба вказати не повний хеш)
+git push origin main --force     --> Обновляє відновлену версію на гіт хаб
+git checkout -- .  --> Повертає до останнього коміту
+
+git branch   -->  показує в якій гілці ми знаходимось + список всіх гілок
+git branch <nameBranch>  -->  додати нову гілку
+git branch -D <nameBranch>  -->  видалити гілку
+git checkout <nameBranch, на яку хочем переключитись>    --> команда щоб переключитись на іншу гілку
+git branch -M main  -->  перейменовує вітку master в main
+
+git merge (nameBranch з якою треба злити)  --> щоб злити 2 гілики в одну
+
+git remote add origin https://github.com/MEDOYED/Motion-Wise.git  -->  ця команда потрібна щоб прив'язати локальний репозиторій до репозиторію на GitHub
+
+git clone https://github.com/MEDOYED/Motion-Wise.git   -->  для того щоб стянути репозиторій з GitHub
+
+git pull origin main  -->  для того щоб оновити код з ГітХаба
+git reset --hard origin/main  --> 
+
+git remote -v  --> перевіряє URL віддаленого репозиторію
+
+git push -u origin main -->  відправка змін на гілці main на віддалений репозиторій 
+git push  -->  відправка змін на віддалений репозиторій
+git fetch -->  витягування змін з віддаленого репозиторію
+
+git config --global http.postBuffer 524288000  -->  збільшення ліміту часу для HTTP-з'єднань (було 100мб, стало 500мб) Значення 524288000 представляє розмір буфера в байтах (500 МБ)
+
+git remote set-url origin NEW_URL  --> команда для того, щоб змінити посилання прив'язки до віддаленого репозиторію
+
+rm -rf .git  -->  видаляє .git (тобото видаляє історію комітів)
+
+---------------Git LFS---------------------------
+git lfs install
+git lfs track "*.mp4"
+git lfs track "*.zip"
+
+git add .
+git commit -m "Add large files using Git LFS"
+git push origin ваша_гілка
+
+----    -----     ----  -  ------    - ----
+git lfs untrack resourses    -->  resourses -папка з файлами
+git lfs migrate import --include=resourses --everything
+git lfs uninstall
+
+----------------------------------------------
+
+-------SSG-KEYS--------------
+ssh-keygen -->  команда для генерації ssh ключів (там теба пару раз enter натискати)
+cat ~/.ssh/id_ed25519.pub  -->  команда для перегляду публічного ssh ключу
+------------------------------
+
+
+git checkout -- .  --> Повертає до останнього коміту
+
+git push --set-upstream origin med
+
+
+
+--------------------------------- TERMINAL -----------------------------------
+
+rm -r nameFolder  --> видаляє папку
+
+------------------------------------------------------------------------------
+
+
+
+--------------------------------- npm -----------------------------------
+npm init  -->  добавляє файл package.json
+
+npm install sass  --> встановлює сас в проект
+npm install  -->  команда читає файл package.json і встановлює всі необхідні зависимості (наприклад node_modules)
+npm start  -->  запускає код, start - слово в скріптах в файлі package.json
+npm run help  -->  підсказка, список команд
+
+npm install --save-dev parcel
+
+------------------------------------------------------------------------------

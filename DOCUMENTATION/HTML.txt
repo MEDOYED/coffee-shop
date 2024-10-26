@@ -1,0 +1,275 @@
+	СКОРОЧЕНІ КЛАВІШІ ДЛЯ ГУГЛА
+Ctrl + Shift + I (панель розробника)
+
+	Скорочені клавіші для VS CODE
+Shift + Alt + стрілки в низ (робить дублікат рядка)
+Ctrl + / (закоментовує виділений код)
+Alt + W (обертає тег тегом)
+Alt + стілка вверх/вниз (педнімає/опускає виділений код вверх/вниз)
+Shift + Alt + F (автоматичне форматування)
+lorem + Tab (рибний текст)
+Ctrl + f  -->  срілка направо
+Ctrl + e  -->  стрілка вверх
+Ctrl + d  -->  стрілка вниз
+Ctrl + s  -->  стрілка вліво
+------------------------------------------------------------------------
+СИМАНТИЧНІ ТЕГИ:
+<header>
+  <nav></nav>
+  <nav></nav>
+  ...
+</header>
+<main>
+  <article>
+  <article>
+  <article>
+  ...
+<main>
+  <aside> == це те що збоку (допомідня інформація)
+    <nav></nav>
+    <nav></nav>
+  </aside>
+  <article>
+    <section></section>
+    <section></section>
+    <section></section>
+    ...
+  </article>
+</main>
+
+<footer>
+</footer>
+
+-------------------------------------------------------------------------
+<div> </div>   == описує блочні елементи
+<span> </span> == описує строчні елементи
+
+--------------------------------------------------------------------------
+   <br>  --перенос текста (і не тільки) на іншу строчку
+  <hr>  --> розділяє (створює тоненьку горизонтальну полоску)
+
+ // h$*6 (розвертає тег заголовку від h1 до h6) 
+   <h1></h1>
+   <h2></h2>
+   <h3></h3>
+   <h4></h4>
+   <h5></h5>
+   <h6></h6> 
+	
+<p>
+    тег тексту (параграф)
+</p>
+
+<q>
+   "цитата"
+ </q>
+
+<blockquote>
+  Окремий блок тексту
+</blockquote>
+-------------------------------------------------------------------------
+НЕ НУМЕРОВАНИЙ СПИСОК | unordered list
+<ul>
+  <li></li> == пункти в списку
+  <li></li>
+  ..
+</ul>
+
+НУМЕРОВАНИЙ СПИСОК | ordered list
+<ol>
+  <li></li>
+  <li></li>
+  ...
+</ol>
+
+<dl>
+  <dt></dt>
+  <dd></dd>
+</dl>
+-------------------------------------------------------------------------
+ВСТАВЛЕННЯ ЗОБРАЖЕНЬ
+
+    <img src="vadim-sherbakov-tCICLJ5ktBE-unsplash.jpg" alt="Hernya" width="300" height="200">
+    <p>
+        Kakaeto Hernya
+    </p>
+	(ТО НЕ ПРАВИЛЬНА ВСТАВКА ЗОБРАЖЕННЯ З ТОЧКИ ЗОРУ СЕМАНТИКИ)
+
+
+(А ОЦЕ ВЖЕ ПРАВИЛЬНО!)
+     <figure>
+        <picture>
+            <source media="(max-width: 500px)" srcset="vadim-sherbakov-tCICLJ5ktBE-unsplash.jpg" width="300" height="200">
+            <source media="(max-width: 1000px)" srcset="vadim-sherbakov-tCICLJ5ktBE-unsplash.jpg" width="600" height="500">
+            <img src="vadim-sherbakov-tCICLJ5ktBE-unsplash.jpg" alt="Hernya" width="1200" height="950">
+        </picture>
+        <figcaption>
+            На цьому зображенні є окуляри
+        </figcaption>
+    </figure>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ВСТАВКА ВІДЕО І АУДІО 
+<audio src="02589.mp3" controls loop></audio>
+
+<video  width="500" controls preload="metadata">                <!--muted autoplay loop -->   <!--controls poster="tab-icon.ico" (це добавляє прев'ю на відео)-->
+        <source src="Lake.webm" type="video/webm"> 
+        <source src="Lake.mp4" type="video/mp4">
+        упс, ваш брфузур не поддерживает вставку видео  
+    </video>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ВСТАВЛЕННЯ СИЛКИ
+<a href="sylka"> text </a>    == Вставлення силки на сайт (відкривається в
+				 цьому ж вікні)
+<a href="sylka" target="_blank"> text </a>  == Вставлення силки на сайт з
+						перекиданням в нове вікно
+
+-------------------------------------------------------------------------
+ЯКОРНА СИЛКА:
+<a href="#text"> bob </a>    == силка яка веде на div
+
+<div id="text"> goga </div>
+---------------------------------------------------------------------------
+СИЛКА НА ТЕЛЕФОН І ПОЧТУ:
+<a href="tel:+380987197272">+38 (089) 719-72-72</a>
+<a href="mailto:max@gmail.com">max@gmail.com</a>
+---------------------------------------------------------------------------
+СТВОРЕННЯ КНОПКИ:
+<button type="button">1 botton</button>
+<button type="menu">2 botton</button>
+<button type="reset">3 botton</button>
+<button type="submit">4 botton</button>
+
+"button" - Кнопка без явної функціональності, але може бути використана 
+	   в поєднанні з JavaScript.
+"menu" - Кнопка, яка викликає меню для вибору команди.
+"reset" - Кнопка, яка очищає введені дані в формі.
+"submit" - Кнопка, яка відправляє дані форми на сервер.
+---------------------------------------------------------------------------
+	ТАБЛИЦІ
+<table> 
+  <caption>  == підпис для таблиці
+    
+  </caption>
+
+  <tr> == вставка строчки  
+    <td></td> == вставка комірки 
+  </tr> 
+</table>
+
+	СЕМАНТИЧНІ ТЕГИ ДЛЯ ТАБЛИЦЬ
+<thead></thead>
+<tbody></tbody>
+<tfoot></tfoot>
+
+	ОБ'ЄДНАННЯ КОМІРОК
+<tr>
+  <td colspan="2">текст<td>   == об'єднання комірок (колонок)
+  <td rowspan="2">Мишка</td>  == об'єдняння комірок (строк)
+</tr>
+
+
+----------------------------------------------------------------------------
+          КОНТАКТНІ ФОРМИ
+<form action="">               action="шлях до скрипта який обробляє форму"       method="dialog/get/post" == щось зв'язане з бекендом         name=""          autocomplete="on"
+  <button type="submit/reset">Відправити данні на сервер</button> -- кнопка
+  <input type="text"> поле для вводу
+
+  <select>
+    <option value="Один з пунктів"</option>   --випадаючий список з варіантами вибору
+  </select>
+
+  <textarea cols="30" rowc="10"> <textarea>   -- вулике поле для вводу 
+
+  <label for="#boba123">Введіть ваше ім'я</label>  -- назва для поля
+  <input id="boba123" type="text"> поле для вводу
+
+  <fieldset>    -- тег для групування кнопок/інпутів і т.д.
+    <legend>Підпис того що в середині fildsetu</legend>
+  </fieldset>
+</form>
+
+
+-----------------------------------------------------------------------------
+         №12 ПОЛЯ ВВОДУ
+
+  <input type="text">
+  <input type="number">
+  <input type="password">
+  <input type="tel">
+  <input type="email">
+  <input type="search">  -- пошук на сторінці
+  <input type="file"> -- вставлення файлу
+  <input type="url">   --вставлення посилання
+  <input type="date">
+  <input type="datetime-local">
+  <input type="month">
+  <input type="week">
+  <input type="time">
+
+  <input type="radio" name="name1"> -- можна вибрати 1 з трьох варіантів
+  <input type="radio" name="name1">
+  <input type="radio" name="name1">
+
+  <input type="checkbox">  - можна вибрати декілька варіантів
+  <input type="checkbox">
+  <input type="checkbox">
+
+  <input list="list1">       -- це все вибів, як через select, але тит ще можна вводити текст в ручну
+  <datalist id="list1">
+    <option value="val1"></option>
+    <option value="val2"></option>
+    <option value="val3"></option>
+    <option value="val4"></option>
+  </datalist>
+
+------------------------------------------------------------------------------------------------------------------
+       №13 ЗАГАЛЬНІ КОРИСНІ АТРИБУТИ id, class, style, title, tabindex
+
+
+<div id="block1"></div>  -- id звжди різні. Стилізуються по одному
+  <div></div>
+  <div></div>
+  <div></div>
+  <div id="block2"></div>
+
+<div class="class-block"></div>   -- класи можуть бути однакові. (до них можна вжити одинакові стилі css і одинакові скрипти JS)
+<div class="class-block"></div>
+
+<div style="width: 100px; height: 100px; background-color: #333;"></div>  -- так робити не треба
+
+<div title="title element">Тайтл элемент</div>  -- при навенні курсором миші вилазить текст "title element"
+
+<div tabindex=""></div>                -- це для того, щоб було зручно пересуватись мід полями вводу на кнопку Tab
+  <input type="text" tabindex="1">
+  <input type="text" tabindex="2">
+  <input type="text" tabindex="3">
+
+-----------------------------------------------------------------------------------------------------------------------------
+      #14 ПУТИ (ШЛЯХИ, ПОСИЛАННЯ)
+ 
+Так виглядає підключення в HTML
+<body>
+  <!-- Абсолютные пути -->
+  <a href="http://google.com">Ссылка на гугл</a>
+  <img src="d:/" alt="">
+
+  <!-- Относительные пути -->
+  <img src="images/icons/tab-icon.ico" alt="">
+  <img src="./images/icons/tab-icon.ico" alt="">  -- 
+  <img src="/images/icons/tab-icon.ico" alt="">   --  
+</body>
+
+Так виглядає підключення в CSS
+.block {
+  background: url("../images/icons/tab-icon.ico");
+}
+
+
+маркетинг от а до я
+
+
+
+
+
+
+

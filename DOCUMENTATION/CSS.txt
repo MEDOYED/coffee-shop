@@ -1,0 +1,429 @@
+---------------#15 СЕЛЕКТОРИ--------------------------
+.name_class
+#name_id
+div {...}  --> до тега
+[class] {...}  --> attribute
+.pipa > span   --> в класі до тега
+
+div.orange {...}  -->  (без пробіла) приміняться стилі  до всіх класів orange
+div .orange {...}  -->  (з пробілом) приміняються стилі тільки для дочірніх класів 
+
+________________ПРИКЛАД____________________
+  <div class="orange">Hello css</div>
+  <div>
+    <div class="orange">Hello css</div>
+  </div>
+  <div class="orange">Hello css</div>
+
+Для 6 строчки пофарбується все
+Для 7 строчки пофарбується тільки 11 строчка
+____________________________________________
+-----------------------------------------------------------
+
+---------#16 ПРІОРИТЕТИ СЕЛЕКТОРІВ---------------------------
+1     --> element, pseudo-element
+10    --> class, attribute, pseudo-class
+100   --> id
+1000  --> inline style  (задання стилу через атрибут style
+                         всередині HTML)
+найважливіше  -->  !important (задається в css всередині {color: red !important} )
+                   не рекомендується до використання
+--------------------------------------------------------------
+
+--------№17 БЕМ--------------------------------------------------------------------------------
+БЕМ --> блок, елемент, модификатор
+
+БЛОК можна витягти з любого місця і всавити в любе місце структури, так щоб нічого не зламалось
+name-class
+
+ЕЛЕМЕНТи знаходяться в середині класу
+name-class__element
+name-class__name-element
+
+МОДИФІКАТОР (зв'язано с JavaScript) відповідає на питання який? яка: і т.д.
+name-class__name-element--color-green   --> --color-green - модифікатор
+name-class__name-element_color-green    --> _color-green - модифікатор
+-------------------------------------------------------------------------------------------------
+
+---------------№18 ОБНУЛЕННЯ СТИЛІВ-----------------------------------------------------------------
+
+-------HTML------
+<link rel="stylesheet" href="reset.css">       --> спочатку підключення ресет
+<link rel="stylesheet" href="stytle.css">    --> а вже потім підключення стилів
+-----------------
+
+------------CSS------
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+  height:100%;width:100%;
+  font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+a{color:inherit;}
+----------------------
+----------------------------------------------------------------------------------------------------
+
+-----№19 СВОЙСТВА (ПО БІЛЬШОСТІ ДО ТЕКСТУ) --------------------------------------
+.class {
+  color: rgb(red, green, blue);-->  колір для тексту
+  color: #333333;              
+  font-family: ;              -->  встановлення шрифту (Ctrl + пробіл перед закриванням скобки вилазить еміт)
+  font-size: 20px;            -->  розмір шрифта
+  line-height: 20px / 1;      -->  розмір лінії (1 означає що ширина лінії дорівнює розміру тексту)
+  font-style: italic/normal;  -->  стиль шрифта
+  font-weight: 600;           -->  жирність шрифта
+  height: 2px;                -->  висота
+  width: 100%;                -->  прозорість
+  background-color: black;    -->  колір (не для тексту)
+! text-align: justify;        -->  вирівнювання тексту (justify-на всю ширину строчки)
+  text-decoration: underline; -->  підкреслення, закреслення і т.д.
+text-shadow: 3px 2px 1px #000 -->  тінь для тексту (3px-вісь х, 2px-вісь у, 1px-блюр )
+  text-indent: 50px;          -->  абзац
+  text-transform: lowercase;  -->  регістр (верхній нижній)
+  letter-spacing: 2px;        -->  відстань між буквами
+  word-spacing: 10px;         -->  відстань між словами
+  white-space: pre-wrap;      -->  щось зв'язане з переносом
+}
+-----------------------------------------------------------------------------------------------
+
+-----№21 ОСНОВНІ СВОЙСТВА-----------------------------------------------------------------------
+  box-sizing: content-box;  -->  розмір без паддінгу (херня)
+  box-sizing: border-box;   -->  розмір включаючи padding в себе
+  padding: 50px;            -->  ВНУТРІННІЙ відступ зі всіх строін одночасно
+  margin: 30px;             -->  ЗОВНІШНІЙ відступ зі всіх сторін
+padding: 50px 20px 30px 40px;->  padding: toppx rightpx bottompx leftpx
+  width: 50px               -->  ширина (строгий варіант)
+
+  min-width                 -->  мінімальна ширина       --> (не сторгий варінт)
+  max-width                 -->  максимальна ширина      -------^
+
+  height: 100px             -->  висота (строгий варіант)
+
+  min-height                -->  мінімальна висота
+  max-height                -->  максимальна висота
+
+  overflow: hidden;         -->  переповнення: ховається
+  overflow: scroll;         -->  переповнення: появляється скрол бар 
+  overflow: visible;        -->  переповнення: видне
+
+  display: block;           -->  блочний стиль (div має предустановлений блочний стиль)
+  display: inline;          -->  строчний стиль (span має предустановлений інлайновий стиль)
+  display: inline-block;    -->  взагалі сказка
+  display: flex;            -->  
+  display: grid;            -->  
+
+  border: 5px solid #000;   --> межі...
+          ||
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000;
+
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+
+  border-style: dashed, dotted, groove... ;  -->  стиль межі... підкреслення, точки і т.д.
+  box-shadow: 1px 1px 1px #000;
+  opacity: 0.1 до 1;
+  visibility: hidden;
+
+  list-style: none;       -->  відключає номерацію у списків
+  
+-----------------#23 BACKGROUND---------------------------
+  background: #333;
+  background: linear-gradient(#3ea754, #bb2020);
+  background: radial-gradient(#5307e0, #42126e);
+
+  background: url("...") 50px center no-repeat;
+  background-color: #fff;
+  background-image: url();
+  background-repeat: space;
+  background-position: x, y;
+
+  background-attachment: fixed;
+  background-attachment: local;
+  background-attachment: scroll;
+--------------------------------------------------------
+
+-------------#24 POSITION-------------------------------
+position: relative;  Переміщення всередині рамки (іншого класу (родителя))
+  top: 100px;    --> відступ від верху на 100 пікселів
+  left: 100px;   --> відступ від лівої сторони на 100 пікселів
+  z-index: -1;   --> рух по осі Z (віддаляє, приближає предмети)
+
+
+  position: absolute;
+  position: fixed;
+  position: sticky;
+
+--------------------------------------------------------
+
+-----------------#25 TRANSFORM--------------------------
+
+  transform: translate(0px, -100px);     -->  міняє позицію предмету по X i Y
+  
+  transform: rotate(0deg);      
+  transform-origin: 0px 0px;     -->  задає положення точки, відносно якої відбуваються зміни
+  
+  transform: scale(.8);          --> міняє розмір (.8 = 0.8)
+  transform: scaleX(2);
+  
+  transform: skew(70deg, 151deg);   -->  якась шляпа   70deg = 70 градусів
+
+--------------------------------------------------------
+
+------------------#26 TRANSITION------------------------------------
+перший крок: треба задати через hover, на що хочемо поміняти.
+.button:hover {
+  background-color: rgb(108, 158, 106);
+  border-radius: 100px;
+}
+
+А потім же транзішн прописувати
+
+.button {
+  transition-duration: 3s;  -->  анімація діє 3 секунди
+
+  transition-duration: 1s, 3s;
+  transition-property: background-color, border-radius;  -->  Устанавливает имя стилевого свойства, значение которого будет отслеживаться для создания 
+                                                              эффекта перехода.
+   transition-delay: 2s;  -->  Затримка (2 секунди)
+
+  /* transition-timing-function: ; */
+  /* transition: border-radius 3s, background-color 3s 3s; */
+}
+
+----------------------------------------------------------------
+
+-------ОДИННИЦІ ВИМІРУ px, %, vh и т.д.-----------------------------------------------
+
+Пиксели (px) - это фиксированная единица измерения, используемая для указания ширины,
+    высоты, отступов и других свойств.
+Проценты (%): это единица измерения, используемая для определения процентных
+    отношений.
+Em: это единица измерения, основанная на размере шрифта родительского элемента.
+Rem: это единица измерения, основанная на размере шрифта корневого элемента.
+VH и VW - это относительные единицы измерения в CSS, которые зависят от размера окна
+    просмотра браузера.
+VH: означает высоту окна просмотра и равен 1/100 части высоты окна просмотра.
+VW: означает ширину окна просмотра и равен 1/100 части ширины окна просмотра. Эти
+    единицы полезны для создания адаптивного дизайна, который подстраивается под разные
+    размеры экранов.
+-----------------------------------------------------------------------------------------------
+
+----------------#27 ANIMATION---------------------------------------
+  animation-name: ;
+  animation-duration: ;                 --> Тривалість анімації
+  animation-timing-function: ;          --> 
+  animation-delay: 0ms;                 --> затримка
+  animation-iteration-count: infinite;
+  animation-fill-mode: ;
+--------------------------------------------------------------------
+
+---------------#28 Flexbox------------------------------------------
+  display: flex;   -->  елементи встають в строчку і займають всю ширину строчки
+  display: inline-flex  -->  елементи встають в строчку і НЕ займають всю ширину строчки
+  
+  justify-content: ;    ---->   виривінювання по горизонталі
+
+  justify-content: space-between;   -->  одинакова відстань між всіма об'єктами всередині врапера (розтягує на всю ширину строчки)
+  justify-content: space-evenly;    -->  щось середнє між space-between і space-around
+  justify-content: space-around;     --> навколо елементів одинакова відстань (і до меж врапера)
+  justify-content: center;
+  justify-content: end;
+  justify-content: left;
+  justify-content: right;
+
+  aling-items: ;   ---->  вирівнювання по вертикалі
+  
+  aling-items: flex-start;    -->  верх
+  aling-items: flex-end;      -->  низ
+  aling-items: flex-center;   -->  по центру
+
+  flex-wrap: ;  ---->  перенесення контенту на іншу строчку
+
+  flex-wrap: nowrap;  -->  виключено
+  flex-wrap: wrap;    -->  включено
+  flex-wrap: wrap-reverse;    -->  включено (перекинує не на строчку вниз, а на строчку наверх)
+  
+  flex-direction: row;    -->  ставить всі елементи в строчку (таке значення стоїть по стандарту)
+  flex-direction: column;  -->  ставить всі елементи в колонку
+
+--------------------------------------------------------------------
+
+-------------#29 GRID------------------------------------------------
+  display: grid;
+  grid-template-columns: 200px minmax(100px, 1fr) 200px;   -->  три колонки із заданою шириною
+  grid-template-rows: auto auto;            -->  кількість строчок
+
+  grid-row: row2 / row3;
+  grid-column: col3 / col4;
+  grid-gap: 20% 10%  -->  відстань по x = 20%, відстань по y = 10%
+
+
+  .grid-2 {
+  display: grid;
+  grid-template: 
+  "header header" 1fr
+  "main aside" 5fr
+  "footer footer" 2fr
+  / 1fr 300px;
+}
+
+.grid-2__item--header {
+  grid-area: header;
+}
+.grid-2__item--main {
+  grid-area: main;
+}
+.grid-2__item--aside {
+  grid-area: aside;
+}
+.grid-2__item--footer {
+  grid-area: footer;
+}
+
+*******************************
+
+.grid-3 {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  /* grid-auto-rows: 400px; */
+  /* grid-auto-columns: 300px; */
+  grid-auto-flow: dense;
+}
+
+.grid-3__item--6 {
+  grid-column: span 2;
+}
+
+************************************
+
+.grid-4 {
+  display: grid;
+  grid-template:
+  [row1] 1fr [row2] 1fr [row3]
+  / [col1] 1fr [col2] 1fr [col3] 1fr [col4];
+  grid-gap: 20% 10%;
+}
+
+
+
+.grid-4__item--3 {
+  grid-row: row2 / row3;
+  grid-column: col3 / col4;
+}
+
+---------------------------------------------------------------------
+
+----------#30 Псевдокласи: hover, visited, active, focus, first-child...------------------------
+----------#30 Псевдокласи: hover, visited, active, focus, first-child...------------------------
+
+  .class:hover {}  --> міняє контент після наведення на елемент мишкою
+  .class:visited {}  -->  якщо перейти по посиланню, міняється контент
+  .class:active {}   -->  при натисканні міняється контент (в момент напискання)
+
+  .class:focus {                                     -->  при фокусі на чомусь міняється контент 
+    box-shadow: 0 0 30px 10px rgb(120, 120,120);     -->  (в нашому випадку добавляється тінь)
+  }
+
+  .class:first-child {}     -->  можна звернутись до першого елементу
+  .class:nth-child(4) {}    -->  можна звернутись до будь-якого елементу (напириклад 4)
+  .class:last-child {}      -->  можна звернутись до останнього елементу
+
+  .class:nth-child(odd)     -->  звертається до кожного ПАРНОГО елементу
+  .class:nth-child(even)     -->  звертається до кожного НЕ ПАРНОГО елементу
+  .class:nth-child(3n)     -->  звертається до кожного ТРЕТЬОГО елементу
+  .class:nth-child(4n)     -->  звертається до кожного ЧЕТВЕРТОГО елементу
+
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+
+
+-------------#31 ПСЕВДОЕЛЕМЕНТИ: ::before, ::after, ::first-line, ::first-letter--------------------------------------------------------------------------------------
+-------------#31 ПСЕВДОЕЛЕМЕНТИ: ::before, ::after, ::first-line, ::first-letter--------------------------------------------------------------------------------------
+
+Добавлення повноцінних елементів
+-По замовчуванню всі псевдоелементи є строчнимим елементами
+наприклад: ::before і ::after добавляють повноцінний елемент всередині якогось класу HTML
+
+
+.header__user-nav {
+  position: relative;
+}
+
+.header__user-nav::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url("/images/icons/person-icon.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+
+можна також комбінувати псевдокласи і псевдоелементи... Наприклад:
+.class:hover::after {   -->  при наведенні мишкою, буде мінятись контент...
+  content"2"
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+------------------ДОДАТКОВІ СТИЛІ------------------------------
+  scroll-behavior: smooth;  -->  робить пладну прокрутку сайту (н.п. по натисканню по ярорю)
+  scale: 1.01; -->  змінює розмір
+  white-space: nowrap; -->  щоб не було перенесення тексту
+  min-height: 100%;  -->  мінімальна висота 100% (прописується для врапера)
+  overflow: hidden;  -->  для того щоб не було нижнього скрол бара (для прогортування сторіники на право/ліво)
+  
+  object-fit: contain;
+  object-fit: cover;
+  object-fit: fill;
+  object-fit: none; 
+  object-fit: scale-down; 
+  
+  align-self: center;
+  align-self: flex-start;
+
+  transform: translateY(30%);
+
+  ----------------
+    display: grid;
+  place-items: center;   центруем дів гридом
+
+----------------------------------------------------------
+  background: url("/src/img/works/works__bg.svg") 0 0 / 100% no-repeat;
+---------------------------------------------------------------
+
+
+  user-select: none;
+  background-position: right center;
+  background-position: 0 0;
+  flex-direction: row-reverse;
+
+  user-select: none;   -->  не можна виділяти текст нра сайті
+
+
+
+
