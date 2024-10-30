@@ -1,6 +1,5 @@
 import { Component } from "react";
 
-// import headerImg from "../../../assets/img/home/home-header-img.jpeg";
 import whiteBeen from "../../../assets/img/home/home-white-been.svg";
 import "./coffee-house-header.scss";
 
