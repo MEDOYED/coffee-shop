@@ -1,0 +1,25 @@
+.home-card {
+  position: relative;
+  width: 220px;
+  height: 240px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.65);
+  color: #000;
+  margin: 0 35px 0 35px;
+}
+
+.home-card__img {
+  display: flex;
+  margin: 22px auto 0;
+}
+
+.home-card__description {
+  margin-top: 14px;
+  text-align: center;
+}
+
+.home-card__price {
+  position: absolute;
+  bottom: 22px;
+  right: 20px;
+}
