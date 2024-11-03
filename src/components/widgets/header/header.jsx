@@ -18,7 +18,7 @@ class Header extends Component {
       theme === "white" ? "header-nav-white" : "header-nav-black";
 
     return (
-      <div className="container">
+      <div className="header">
         <nav className={positionNavClassName}>
           <ul className="header-list">
             <li className="header-item" key="home">
