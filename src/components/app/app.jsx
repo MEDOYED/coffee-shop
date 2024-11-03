@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <Header />
+        <Header theme={"white"} />
         <Outlet />
       </>
     );

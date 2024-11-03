@@ -1,7 +1,5 @@
 import { Component } from "react";
 
-import solimo from "../../../assets/img/home/home-solimo.png";
-
 import "./coffee-house-card.scss";
 
 class CoffeeHouseCard extends Component {
