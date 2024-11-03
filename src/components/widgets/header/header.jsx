@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 import logoWhite from "../../../assets/img/header-logo.svg";
-import logoBlack from "../../../assets/img/footer-icon.svg";
+import logoBlack from "../../../assets/img/home/home-footer.svg";
 
 import "./header.scss";
 
