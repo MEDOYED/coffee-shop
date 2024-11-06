@@ -15,3 +15,8 @@
 .black-been__img {
   margin: 0 26px 0 26px;
 }
+
+.black-been__img--mirrored {
+  margin: 0 26px 0 26px;
+  transform: rotate(180deg);
+}
