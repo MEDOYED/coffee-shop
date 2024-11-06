@@ -1,0 +1,12 @@
+.our-coffee-header {
+  position: relative;
+
+  &__title {
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    transform: translateX(-50%);
+  }
+}
