@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-import Header from "../widgets/header/header";
+import Header from "../widgets/nav-menu/nav-menu";
 import { Outlet } from "react-router-dom";
 
 import "./app.scss";

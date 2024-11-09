@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import logoWhite from "../../../assets/img/header-logo.svg";
 import logoBlack from "../../../assets/img/home/home-footer.svg";
 
-import "./header.scss";
+import "./nav-menu.scss";
 
 class Header extends Component {
   render() {

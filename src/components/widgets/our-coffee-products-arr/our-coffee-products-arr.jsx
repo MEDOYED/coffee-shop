@@ -8,7 +8,7 @@ import ProductCard from "../product-card/product-card";
 
 import "./our-coffee-products-arr.scss";
 
-class AobProductsArr extends Component {
+class OurCoffeeProductArr extends Component {
   aobData = [
     {
       src: solimo,
@@ -70,4 +70,4 @@ class AobProductsArr extends Component {
   }
 }
 
-export default AobProductsArr;
+export default OurCoffeeProductArr;
