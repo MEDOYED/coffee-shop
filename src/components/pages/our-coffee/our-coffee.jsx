@@ -4,6 +4,7 @@ import OurCoffeHeader from "../../widgets/our-coffee-header/our-coffee-header";
 import AboutOurBeans from "../../widgets/about-our-beans/about-our-beans";
 import AobSearchPanel from "../../widgets/aob-search-panel/aob-search-panel";
 import AobFilter from "../../widgets/aob-filter/aob-filter";
+import AobProductsArr from "../../widgets/our-coffee-products-arr/our-coffee-products-arr";
 
 import "./our-coffee.scss";
 
@@ -17,6 +18,7 @@ class OurCoffee extends Component {
           <AobSearchPanel />
           <AobFilter />
         </section>
+        <AobProductsArr />
       </div>
     );
   }

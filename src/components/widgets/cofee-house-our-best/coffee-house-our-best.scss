@@ -13,7 +13,9 @@
 }
 
 .home-our__cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 71px;
+  max-width: 800px;
+  margin: 0 auto;
 }

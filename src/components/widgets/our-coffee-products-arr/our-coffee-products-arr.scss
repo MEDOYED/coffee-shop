@@ -1,0 +1,10 @@
+.aob-products-arr {
+  margin-top: 60px;
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 71px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
