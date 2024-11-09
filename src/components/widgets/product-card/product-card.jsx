@@ -1,8 +1,8 @@
 import { Component } from "react";
 
-import "./coffee-house-card.scss";
+import "./product-card.scss";
 
-class CoffeeHouseCard extends Component {
+class ProductCard extends Component {
   render() {
     const { src, description, price, country, hasShadow, hasCountry } =
       this.props;
@@ -21,4 +21,4 @@ class CoffeeHouseCard extends Component {
   }
 }
 
-export default CoffeeHouseCard;
+export default ProductCard;

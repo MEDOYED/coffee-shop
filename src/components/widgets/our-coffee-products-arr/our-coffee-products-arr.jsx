@@ -4,7 +4,7 @@ import solimo from "../../../assets/img/home/home-solimo.png";
 import presto from "../../../assets/img/home/home-presto.jpeg";
 import aromisto from "../../../assets/img/home/home-aromisto.jpeg";
 
-import CoffeeHouseCard from "../coffee-house-card/coffee-house-card";
+import ProductCard from "../product-card/product-card";
 
 import "./our-coffee-products-arr.scss";
 
@@ -12,18 +12,18 @@ class AobProductsArr extends Component {
   aobData = [
     {
       src: solimo,
-      description: "AROMISTICO Coffee 1 kg",
+      description: "Solimo Coffee Beans 1 kg",
       country: "Brazil",
       price: "6.99$",
     },
     {
       src: presto,
-      description: "AROMISTICO Coffee 1 kg",
+      description: "Presto Coffee Beans 2 kg",
       country: "Kenya",
       price: "9.99$",
     },
     {
-      src: solimo,
+      src: aromisto,
       description: "AROMISTICO Coffee 1 kg",
       country: "Columbia",
       price: "6.99$",
@@ -35,22 +35,22 @@ class AobProductsArr extends Component {
       price: "11.99$",
     },
     {
-      src: presto,
-      description: "AROMISTICO Coffee 1 kg",
-      country: "Columbia",
-      price: "13.99$",
-    },
-    {
       src: solimo,
-      description: "AROMISTICO Coffee 1 kg",
+      description: "Solimo Coffee Beans 1 kg",
       country: "Kenya",
       price: "10.99$",
+    },
+    {
+      src: presto,
+      description: "Presto Coffee Beans 2 kg",
+      country: "Columbia",
+      price: "13.99$",
     },
   ];
 
   renderProducts() {
     return this.aobData.map(item => (
-      <CoffeeHouseCard
+      <ProductCard
         hasCountry
         hasShadow
         src={item.src}

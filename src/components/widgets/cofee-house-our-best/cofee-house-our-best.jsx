@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-import CoffeeHouseCard from "../coffee-house-card/coffee-house-card";
+import ProductCard from "../product-card/product-card";
 
 // import image
 import solimoImg from "../../../assets/img/home/home-solimo.png";
@@ -30,7 +30,7 @@ class CoffeeHouseOurBest extends Component {
 
   renderCards() {
     return this.data.map((item, index) => (
-      <CoffeeHouseCard
+      <ProductCard
         key={index}
         src={item.src}
         description={item.description}

@@ -9,6 +9,11 @@
 
 .home-card__shadow {
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
+}
+
+.home-card__shadow:hover {
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
 .home-card__img {
