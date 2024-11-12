@@ -4,12 +4,34 @@ import "./aob-filter.scss";
 
 class AobFilter extends Component {
   render() {
+    const { handleFilter } = this.props;
     return (
       <div className="aob-filter">
         <div className="aob-filter__text">Or filter</div>
-        <button className="aob-filter__btn">Brazil</button>
-        <button className="aob-filter__btn">Kenya</button>
-        <button className="aob-filter__btn">Columbia</button>
+        <button
+          onClick={() => {
+            handleFilter("Brazil");
+          }}
+          className="aob-filter__btn"
+        >
+          Brazil
+        </button>
+        <button
+          onClick={() => {
+            handleFilter("Kenya");
+          }}
+          className="aob-filter__btn"
+        >
+          Kenya
+        </button>
+        <button
+          onClick={() => {
+            handleFilter("Columbia");
+          }}
+          className="aob-filter__btn"
+        >
+          Columbia
+        </button>
       </div>
     );
   }
