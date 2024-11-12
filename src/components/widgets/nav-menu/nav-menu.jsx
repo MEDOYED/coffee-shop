@@ -6,7 +6,7 @@ import logoBlack from "../../../assets/img/home/home-footer.svg";
 
 import "./nav-menu.scss";
 
-class Header extends Component {
+class NavMenu extends Component {
   render() {
     const { theme } = this.props;
     const logo = theme === "white" ? logoWhite : logoBlack;
@@ -44,4 +44,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default NavMenu;

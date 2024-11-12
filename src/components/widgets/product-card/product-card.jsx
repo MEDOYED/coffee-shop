@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 
 import "./product-card.scss";
 
@@ -12,10 +13,12 @@ class ProductCard extends Component {
     ) : null;
     return (
       <li className={`home-card  ${shadowClass}`}>
-        <img className="home-card__img" src={src} alt="Coffee" />
-        <p className="home-card__description">{description}</p>
-        {countryParagraph}
-        <p className="home-card__price">{price}</p>
+        <Link className="home-card" to={"/product"}>
+          <img className="home-card__img" src={src} alt="Coffee" />
+          <p className="home-card__description">{description}</p>
+          {countryParagraph}
+          <p className="home-card__price">{price}</p>
+        </Link>
       </li>
     );
   }
