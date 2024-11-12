@@ -32,6 +32,9 @@ class AobFilter extends Component {
         >
           Columbia
         </button>
+        <button onClick={() => handleFilter("All")} className="aob-filter__btn">
+          All
+        </button>
       </div>
     );
   }
