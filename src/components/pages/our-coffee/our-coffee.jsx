@@ -83,6 +83,10 @@ class OurCoffee extends Component {
     this.setState({ filteredData: this.state.aobData });
   }
 
+  handleCardClick = id => {
+    this.props.history.push(`/product/${id}`);
+  };
+
   render() {
     return (
       <div className="container">
@@ -92,7 +96,10 @@ class OurCoffee extends Component {
           <AobSearchPanel />
           <AobFilter handleFilter={this.handleFilter} />
         </section>
-        <OurCoffeeProductArr filteredData={this.state.filteredData} />
+        <OurCoffeeProductArr
+          filteredData={this.state.filteredData}
+          handleCardClick={this.handleCardClick}
+        />
         <NavMenu />
         <div className="our-coffee__black-been">
           <BlackBeen />

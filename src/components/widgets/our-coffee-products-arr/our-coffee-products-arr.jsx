@@ -6,7 +6,7 @@ import "./our-coffee-products-arr.scss";
 
 class OurCoffeeProductArr extends Component {
   renderProducts() {
-    const { filteredData } = this.props;
+    const { filteredData, handleCardClick } = this.props;
     return filteredData.map((item, index) => (
       <ProductCard
         hasCountry
@@ -16,6 +16,8 @@ class OurCoffeeProductArr extends Component {
         country={item.country}
         price={item.price}
         key={index}
+        id={item.id}
+        onClick={handleCardClick}
       />
     ));
   }
