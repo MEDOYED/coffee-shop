@@ -1,6 +1,7 @@
 import { Component } from "react";
 
 import BlackBeen from "../black-been/black-been";
+import Line from "../../ui/line/line";
 
 import girlImg from "../../../assets/img/our-coffee/our-coffee-girl.jpeg";
 
@@ -27,7 +28,7 @@ class AboutOurBeans extends Component {
             </p>
           </div>
         </div>
-        <hr className="aob__line" />
+        <Line />
       </>
     );
   }
