@@ -1,0 +1,15 @@
+.fyp-header {
+  &__img {
+    background-image: url("../../../assets/img/for-your-pleasure/fyp-header-img.png");
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 58px;
+  }
+}

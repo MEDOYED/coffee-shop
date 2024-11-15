@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 
+import FypHeader from "../../widgets/fyp-header/fyp-header";
+
 import "./for-your-pleasure.scss";
 
 class ForYourPleasure extends Component {
   render() {
     return (
-      <>
-        <h1>For Your Pleasure</h1>
-      </>
+      <div className="container">
+        <FypHeader />
+      </div>
     );
   }
 }
