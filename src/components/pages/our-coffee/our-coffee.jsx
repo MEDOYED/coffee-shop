@@ -63,6 +63,7 @@ class OurCoffee extends Component {
         },
       ],
       filteredData: [],
+      term: "",
     };
 
     this.handleFilter = this.handleFilter.bind(this);
@@ -87,17 +88,46 @@ class OurCoffee extends Component {
     this.props.history.push(`/product/${id}`);
   };
 
+  onUpdateSearch(term) {
+    this.setState({ term: term });
+  }
+
+  filterBySearchTerm() {
+    const { term, aobData } = this.state;
+    if (!term) return aobData; // Якщо термін порожній, повертаємо всі дані
+    return aobData.filter(item =>
+      item.description.toLowerCase().includes(term.toLowerCase()),
+    );
+  }
+
+  getFilteredData() {
+    const { aobData, term, filteredData } = this.state;
+
+    let result = filteredData.length ? filteredData : aobData;
+
+    if (term) {
+      result = result.filter(item =>
+        item.description.toLowerCase().includes(term.toLowerCase()),
+      );
+    }
+
+    return result;
+  }
+
   render() {
+    const filteredData = this.getFilteredData();
+
     return (
       <div className="container">
         <OurCoffeHeader />
         <AboutOurBeans />
         <section className="our-coffee__fiter">
-          <AobSearchPanel />
+          <AobSearchPanel onUpdateSearch={term => this.onUpdateSearch(term)} />
           <AobFilter handleFilter={this.handleFilter} />
         </section>
         <OurCoffeeProductArr
-          filteredData={this.state.filteredData}
+          // filteredData={this.state.filteredData}
+          filteredData={filteredData}
           handleCardClick={this.handleCardClick}
         />
         <NavMenu />
