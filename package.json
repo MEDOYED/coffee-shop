@@ -2,7 +2,6 @@
   "name": "coffee-shop",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://medoyed.github.io/coffee-shop/",
   "type": "module",
   "scripts": {
     "start": "vite",
