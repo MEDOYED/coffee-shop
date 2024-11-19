@@ -8,10 +8,10 @@ import "./app.scss";
 class App extends Component {
   render() {
     return (
-      <>
+      <div className="container">
         <NavMenu theme={"white"} />
         <Outlet />
-      </>
+      </div>
     );
   }
 }

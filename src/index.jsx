@@ -12,8 +12,6 @@ import "./index.scss";
 
 const router = createBrowserRouter([
   {
-    // base: "/coffee-shop/",
-    // basename: "/coffee-shop/",
     path: "/",
     element: <App />,
     children: [
