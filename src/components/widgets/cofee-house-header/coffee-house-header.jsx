@@ -23,7 +23,7 @@ class CoffeeHouseHeader extends Component {
               <div className="home-header__content-line"></div>
             </div>
             <h2 className="home-header-subtitle">
-              We makes every day full of energy and taste
+              We makes every day full of energy and taste.
             </h2>
             <h2 className="home-header-subtitle">Want to try our beans?</h2>
             <button className="home-header-btn">
