@@ -14,6 +14,7 @@ class FypAbout extends Component {
         <div className="fyp-about">
           <img src={img} alt="a cup of hot coffee" className="fyp-about__img" />
           <div className="fyp-about__content">
+            <BlackBeen isMirror={"mirror"} />
             <h2 className="fyp-about__heading">About our goods</h2>
             <BlackBeen />
             <p className="fyp-about__text">

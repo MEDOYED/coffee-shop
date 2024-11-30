@@ -14,6 +14,7 @@ class AboutOurBeans extends Component {
         <div className="aob">
           <img className="aob-img" src={girlImg} alt="girt immage" />
           <div className="aob-content">
+            <BlackBeen isMirror={"mirror"} />
             <h2 className="aob-content__title">About our beans</h2>
             <BlackBeen />
             <p className="aob-content__text">
