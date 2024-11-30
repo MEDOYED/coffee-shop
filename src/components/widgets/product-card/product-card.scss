@@ -1,10 +1,15 @@
-.home-card {
+.home-cards {
   display: flex;
   flex-direction: column;
   width: 220px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.65);
   color: #000;
+  min-height: 234px;
+}
+
+.home-card {
+  border-radius: 8px;
 }
 
 .home-card__shadow {
@@ -16,12 +21,12 @@
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
-.home-card__img {
+.home-cards__img {
   display: flex;
   margin: 22px auto 0;
 }
 
-.home-card__description {
+.home-cards__description {
   margin-top: 14px;
   text-align: center;
 }
@@ -30,6 +35,6 @@
   margin: 14px 27px 0px auto;
 }
 
-.home-card__price {
+.home-cards__price {
   margin: 14px 25px 22px auto;
 }
