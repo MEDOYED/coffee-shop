@@ -3,7 +3,7 @@ import { withRouter } from "../../functions/withRouter/with-router";
 
 import OurCoffeHeader from "../../widgets/our-coffee-header/our-coffee-header";
 import ProductAboutIt from "../../widgets/product-about-it/product-about-it";
-import BlackBeen from "../../widgets/black-been/black-been";
+import BlackBeen from "../../ui/black-been/black-been";
 import NavMenu from "../../widgets/nav-menu/nav-menu";
 
 import "./product-info.scss";

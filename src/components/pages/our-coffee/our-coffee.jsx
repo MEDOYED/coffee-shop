@@ -6,7 +6,7 @@ import AobSearchPanel from "../../widgets/aob-search-panel/aob-search-panel";
 import AobFilter from "../../widgets/aob-filter/aob-filter";
 import OurCoffeeProductArr from "../../widgets/our-coffee-products-arr/our-coffee-products-arr";
 import NavMenu from "../../widgets/nav-menu/nav-menu";
-import BlackBeen from "../../widgets/black-been/black-been";
+import BlackBeen from "../../ui/black-been/black-been";
 
 import solimo from "../../../assets/img/home/home-solimo.png";
 import presto from "../../../assets/img/home/home-presto.jpeg";
