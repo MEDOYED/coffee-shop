@@ -1,6 +1,7 @@
 import React, { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ReactDOM from "react-dom/client";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import App from "./components/app/app";
 import CoffeeHouse from "./components/pages/coffee-house/coffee-house";
@@ -10,21 +11,19 @@ import ProductInfo from "./components/pages/product-info/product-info";
 
 import "./index.scss";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      { path: "/", element: <CoffeeHouse /> },
-      { path: "/for", element: <ForYourPleasure /> },
-      { path: "/our", element: <OurCoffee /> },
-      { path: "/product/:id", element: <ProductInfo /> },
-    ],
-  },
-]);
+const root = document.getElementById("root");
 
-createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(root).render(
   <StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route path="/" element={<CoffeeHouse />} />
+          <Route path="/for" element={<ForYourPleasure />} />
+          <Route path="/our" element={<OurCoffee />} />
+          <Route path="/product/:id" element={<ProductInfo />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </StrictMode>,
 );
