@@ -7,7 +7,7 @@ import "./coffe-house-about.scss";
 class CoffeeHouseAbout extends Component {
   render() {
     return (
-      <div className="container">
+      <>
         <div className="home-about">
           <h1 className="home-about__title">About Us</h1>
           <BlackBeen />
@@ -28,7 +28,7 @@ class CoffeeHouseAbout extends Component {
             ladies now.
           </p>
         </div>
-      </div>
+      </>
     );
   }
 }

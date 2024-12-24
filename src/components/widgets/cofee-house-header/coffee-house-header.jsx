@@ -7,7 +7,7 @@ import "./coffee-house-header.scss";
 class CoffeeHouseHeader extends Component {
   render() {
     return (
-      <div className="container">
+      <>
         <header className="home-header">
           <div className="home-header__content">
             <h1 className="home-header__content-title">
@@ -31,7 +31,7 @@ class CoffeeHouseHeader extends Component {
             </button>
           </div>
         </header>
-      </div>
+      </>
     );
   }
 }

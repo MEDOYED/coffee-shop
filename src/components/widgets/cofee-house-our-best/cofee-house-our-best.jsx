@@ -49,12 +49,12 @@ class CoffeeHouseOurBest extends Component {
 
   render() {
     return (
-      <div className="container">
+      <>
         <div className="home-our">
           <div className="home-our__title">Our best</div>
           <ul className="home-our__cards">{this.renderCards()}</ul>
         </div>
-      </div>
+      </>
     );
   }
 }
