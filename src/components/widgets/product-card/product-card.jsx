@@ -11,14 +11,14 @@ const ProductCard = ({
   hasCountry,
   id,
 }) => {
-  const shadowClass = hasShadow ? "home-card__shadow" : "";
+  const shadowClass = hasShadow ? "home-cards__shadow" : "";
   const countryParagraph = hasCountry ? (
-    <div className="home-card__county">{country}</div>
+    <div className="home-cards__county">{country}</div>
   ) : null;
 
   return (
     <>
-      <li className={`home-card  ${shadowClass}`}>
+      <li className={shadowClass}>
         <Link
           className="home-cards"
           to={`/product/${id}`}
