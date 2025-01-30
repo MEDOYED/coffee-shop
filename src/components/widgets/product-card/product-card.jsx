@@ -3,15 +3,22 @@ import { Link } from "react-router-dom";
 
 import "./product-card.scss";
 
-class ProductCard extends Component {
-  render() {
-    const { src, description, price, country, hasShadow, hasCountry, id } =
-      this.props;
-    const shadowClass = hasShadow ? "home-card__shadow" : "";
-    const countryParagraph = hasCountry ? (
-      <div className="home-card__county">{country}</div>
-    ) : null;
-    return (
+const ProductCard = ({
+  src,
+  description,
+  price,
+  country,
+  hasShadow,
+  hasCountry,
+  id,
+}) => {
+  const shadowClass = hasShadow ? "home-card__shadow" : "";
+  const countryParagraph = hasCountry ? (
+    <div className="home-card__county">{country}</div>
+  ) : null;
+
+  return (
+    <>
       <li className={`home-card  ${shadowClass}`}>
         <Link
           className="home-cards"
@@ -24,8 +31,8 @@ class ProductCard extends Component {
           <p className="home-cards__price">{price}</p>
         </Link>
       </li>
-    );
-  }
-}
+    </>
+  );
+};
 
 export default ProductCard;
