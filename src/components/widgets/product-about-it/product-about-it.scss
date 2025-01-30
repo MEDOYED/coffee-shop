@@ -8,15 +8,18 @@
     margin-left: 187px;
     margin-right: 50px;
   }
+
   &__content {
     width: 418px;
   }
+
   &__title {
     text-align: center;
     font-size: 24px;
     line-height: 35px;
     margin-bottom: 21px;
   }
+
   &__country {
     margin-top: 26px;
     margin-bottom: 16px;
@@ -30,11 +33,13 @@
   &__description {
     line-height: 20px;
     margin-bottom: 16px;
+
+    &--bold {
+      font-weight: 700;
+      margin-right: 6px;
+    }
   }
-  &__description--bold {
-    font-weight: 700;
-    margin-right: 6px;
-  }
+
   &__price {
     font-weight: 700;
 
