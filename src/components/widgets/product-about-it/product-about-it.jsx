@@ -4,8 +4,6 @@ import { withRouter } from "../../functions/withRouter/with-router";
 // import BlackBeen from "../black-been/black-been";
 import BlackBeen from "../../ui/black-been/black-been";
 
-import img from "../../../assets/img/our-coffee/our-coffee-product.jpeg";
-
 import "./product-about-it.scss";
 
 class ProductAboutIt extends Component {
