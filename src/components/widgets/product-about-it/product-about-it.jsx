@@ -40,7 +40,7 @@ class ProductAboutIt extends Component {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
             mollitia magnam est, perspiciatis, odit consectetur quos quisquam
             hic tenetur deleniti libero reprehenderit ipsa qui quis nisi
-            dolores. Sit, expedita illum.
+            dolores. Sit, expedita illum
           </p>
           <div className="product-about-it__price">
             Price:
