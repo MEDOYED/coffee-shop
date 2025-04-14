@@ -6,10 +6,6 @@ import "./our-coffee-products-arr.scss";
 
 class OurCoffeeProductArr extends Component {
   renderProducts() {
-    //   if (!filteredData || !Array.isArray(filteredData)) {
-    //     return <p>No products to display</p>;
-    //   }
-
     const { filteredData, handleCardClick } = this.props;
     return filteredData.map((item, index) => (
       <ProductCard
