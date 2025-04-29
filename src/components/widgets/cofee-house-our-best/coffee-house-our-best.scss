@@ -1,7 +1,16 @@
 .home-our {
-  background: url("../../../assets/img/home/home-our-paper.png") 100% 100% /
-    cover no-repeat;
+  background-image: url("../../../assets/img/home/home-our-paper.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+  width: 100vw;
   height: 495px;
+
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
 }
 
 .home-our__title {
