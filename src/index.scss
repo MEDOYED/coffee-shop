@@ -138,3 +138,7 @@ a {
     url("./assets/fonts/Merienda-Bold.ttf") format(truetype);
   font-display: swap;
 }
+
+#__vercel {
+  display: none !important;
+}
