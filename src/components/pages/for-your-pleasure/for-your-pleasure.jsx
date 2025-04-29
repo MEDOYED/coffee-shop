@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import FypHeader from "../../widgets/fyp-header/fyp-header";
 import FypAbout from "../../widgets/fyp-about/fyp-about";
 import OurCoffeeProductArr from "../../widgets/our-coffee-products-arr/our-coffee-products-arr";
-import NavMenu from "../../widgets/nav-menu/nav-menu";
+import Header from "../../widgets/layout/Header/Header";
 import BlackBeen from "../../ui/black-been/black-been";
 
 import solimo from "../../../assets/img/home/home-solimo.png";
@@ -97,7 +97,7 @@ class ForYourPleasure extends Component {
           filteredData={this.state.filteredData}
           handleCardClick={this.handleCardClick}
         />
-        <NavMenu />
+        <Header />
         <div className="fyp__black-been">
           <BlackBeen />
         </div>

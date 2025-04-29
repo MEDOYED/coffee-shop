@@ -4,7 +4,7 @@ import { withRouter } from "../../functions/withRouter/with-router";
 import OurCoffeHeader from "../../widgets/our-coffee-header/our-coffee-header";
 import ProductAboutIt from "../../widgets/product-about-it/product-about-it";
 import BlackBeen from "../../ui/black-been/black-been";
-import NavMenu from "../../widgets/nav-menu/nav-menu";
+import Header from "../../widgets/layout/Header/Header";
 
 import "./product-info.scss";
 
@@ -20,7 +20,7 @@ class ProductInfo extends Component {
           <ProductAboutIt productData={productData} />
         </section>
         <nav className="product-nav-menu">
-          <NavMenu />
+          <Header />
         </nav>
         <div className="product__black-been">
           <BlackBeen />

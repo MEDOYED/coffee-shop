@@ -5,7 +5,7 @@ import AboutOurBeans from "../../widgets/about-our-beans/about-our-beans";
 import AobSearchPanel from "../../widgets/aob-search-panel/aob-search-panel";
 import AobFilter from "../../widgets/aob-filter/aob-filter";
 import OurCoffeeProductArr from "../../widgets/our-coffee-products-arr/our-coffee-products-arr";
-import NavMenu from "../../widgets/nav-menu/nav-menu";
+import Header from "../../widgets/layout/Header/Header";
 import BlackBeen from "../../ui/black-been/black-been";
 
 import solimo from "../../../assets/img/home/home-solimo.png";
@@ -130,7 +130,7 @@ class OurCoffee extends Component {
           filteredData={filteredData}
           handleCardClick={this.handleCardClick}
         />
-        <NavMenu />
+        <Header />
         <div className="our-coffee__black-been">
           <BlackBeen />
         </div>
