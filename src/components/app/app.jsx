@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-import NavMenu from "../widgets/layout/nav-menu/nav-menu";
+import Header from "../widgets/layout/Header/Header";
 import { Outlet } from "react-router-dom";
 
 import "./app.scss";
@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <NavMenu theme={"white"} />
+        <Header theme={"white"} />
         <Outlet />
       </div>
     );
