@@ -1,7 +1,8 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
 
-import whiteBeen from "../../../assets/img/home/home-white-been.svg";
+import WhiteBeen from "../../ui/WhiteBeen/WhiteBeen";
+
 import "./coffee-house-header.scss";
 
 class CoffeeHouseHeader extends Component {
@@ -13,15 +14,9 @@ class CoffeeHouseHeader extends Component {
             <h1 className="home-header__content-title">
               Everything You Love About Coffee
             </h1>
-            <div className="home-header__content-been">
-              <div className="home-header__content-line"></div>
-              <img
-                className="home-header__content-img"
-                src={whiteBeen}
-                alt="White Been"
-              />
-              <div className="home-header__content-line"></div>
-            </div>
+
+            <WhiteBeen />
+
             <h2 className="home-header-subtitle">
               We makes every day full of energy and taste.
             </h2>
