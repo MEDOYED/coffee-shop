@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-import BlackBeen from "../../ui/black-been/black-been";
+import BlackBeen from "../../../ui/black-been/black-been";
 
 import "./coffe-house-about.scss";
 
