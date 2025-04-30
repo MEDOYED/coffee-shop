@@ -3,11 +3,11 @@ import ReactDOM from "react-dom/client";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import App from "./components/app/app";
-import PageHome from "./components/pages/PageHome/PageHome";
-import ForYourPleasure from "./components/pages/for-your-pleasure/for-your-pleasure";
-import OurCoffee from "./components/pages/our-coffee/our-coffee";
-import ProductInfo from "./components/pages/product-info/product-info";
+import App from "./app/app";
+import PageHome from "./pages/PageHome/PageHome";
+import ForYourPleasure from "./pages/for-your-pleasure/for-your-pleasure";
+import OurCoffee from "./pages/our-coffee/our-coffee";
+import ProductInfo from "./pages/product-info/product-info";
 
 import "./index.scss";
 

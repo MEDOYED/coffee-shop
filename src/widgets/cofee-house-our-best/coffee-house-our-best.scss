@@ -1,0 +1,30 @@
+.home-our {
+  background-image: url("../../shared/assets/img/home/home-our-paper.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+  width: 100vw;
+  height: 495px;
+
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+}
+
+.home-our__title {
+  text-align: center;
+  color: #000;
+  font-size: 24px;
+  margin-bottom: 40px;
+  padding-top: 80px;
+}
+
+.home-our__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 71px;
+  max-width: 800px;
+  margin: 0 auto;
+}
