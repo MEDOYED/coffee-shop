@@ -1,34 +1,19 @@
-import { Component } from "react";
-
 import ProductCard from "../product-card/product-card";
+
+import dataProductCard from "../../shared/data/dataProductCard";
 
 import "./our-coffee-products-arr.scss";
 
-class OurCoffeeProductArr extends Component {
-  renderProducts() {
-    const { filteredData, handleCardClick } = this.props;
-    return filteredData.map((item, index) => (
-      <ProductCard
-        hasCountry
-        hasShadow
-        src={item.src}
-        description={item.description}
-        country={item.country}
-        price={item.price}
-        key={index}
-        id={item.id}
-        onClick={handleCardClick}
-      />
-    ));
-  }
-
-  render() {
-    return (
-      <div className="aob-products-arr">
-        <ul className="aob-products-arr__item">{this.renderProducts()}</ul>
-      </div>
-    );
-  }
-}
+const OurCoffeeProductArr = () => {
+  return (
+    <div className="aob-products-arr">
+      <ul className="aob-products-arr__item">
+        {dataProductCard.map(item => (
+          <ProductCard item={item} hasShadow hasCountry />
+        ))}
+      </ul>
+    </div>
+  );
+};
 
 export default OurCoffeeProductArr;
