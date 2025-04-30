@@ -3,7 +3,7 @@ import FypAbout from "../../widgets/fyp-about/fyp-about";
 import SectionProductCards from "../../widgets/SectionProductCards/SectionProductCards";
 import Header from "../../widgets/layout/Header/Header";
 import BlackBeen from "../../shared/ui/black-been/black-been";
-import ProductCard from "../../widgets/product-card/product-card";
+import ProductCard from "../../widgets/cards/CardProduct/CardProduct";
 
 import dataProductCard from "../../shared/data/dataProductCard";
 

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import "./product-card.scss";
+import "./CardProduct.scss";
 
 const ProductCard = ({ hasShadow, hasCountry, item }) => {
   if (!item) return null;

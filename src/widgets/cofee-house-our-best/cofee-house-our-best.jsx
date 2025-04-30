@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-import ProductCard from "../product-card/product-card";
+import ProductCard from "../cards/CardProduct/CardProduct";
 
 // import image
 import solimoImg from "../../shared/assets/img/home/home-solimo.png";
