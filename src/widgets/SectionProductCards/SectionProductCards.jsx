@@ -2,9 +2,9 @@ import ProductCard from "../product-card/product-card";
 
 import dataProductCard from "../../shared/data/dataProductCard";
 
-import "./our-coffee-products-arr.scss";
+import "./SectionProductCards.scss";
 
-const OurCoffeeProductArr = () => {
+const SectionProductCards = () => {
   return (
     <div className="aob-products-arr">
       <ul className="aob-products-arr__item">
@@ -16,4 +16,4 @@ const OurCoffeeProductArr = () => {
   );
 };
 
-export default OurCoffeeProductArr;
+export default SectionProductCards;

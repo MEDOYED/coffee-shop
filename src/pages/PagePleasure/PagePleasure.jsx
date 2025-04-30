@@ -1,6 +1,6 @@
 import FypHeader from "../../widgets/fyp-header/fyp-header";
 import FypAbout from "../../widgets/fyp-about/fyp-about";
-import OurCoffeeProductArr from "../../widgets/our-coffee-products-arr/our-coffee-products-arr";
+import SectionProductCards from "../../widgets/SectionProductCards/SectionProductCards";
 import Header from "../../widgets/layout/Header/Header";
 import BlackBeen from "../../shared/ui/black-been/black-been";
 import ProductCard from "../../widgets/product-card/product-card";
@@ -17,7 +17,7 @@ const PagePleasure = () => {
         <FypAbout />
       </section>
       <section className="fyp__products"></section>
-      <OurCoffeeProductArr
+      <SectionProductCards
       // filteredData={this.state.filteredData}
       // handleCardClick={this.handleCardClick}
       />

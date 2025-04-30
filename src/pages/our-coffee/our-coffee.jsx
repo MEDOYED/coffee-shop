@@ -4,7 +4,7 @@ import OurCoffeHeader from "../../widgets/our-coffee-header/our-coffee-header";
 import AboutOurBeans from "../../widgets/about-our-beans/about-our-beans";
 import AobSearchPanel from "../../widgets/aob-search-panel/aob-search-panel";
 import AobFilter from "../../widgets/aob-filter/aob-filter";
-import OurCoffeeProductArr from "../../widgets/our-coffee-products-arr/our-coffee-products-arr";
+import SectionProductCards from "../../widgets/SectionProductCards/SectionProductCards";
 import Header from "../../widgets/layout/Header/Header";
 import BlackBeen from "../../shared/ui/black-been/black-been";
 
@@ -125,10 +125,10 @@ class OurCoffee extends Component {
           <AobSearchPanel onUpdateSearch={term => this.onUpdateSearch(term)} />
           <AobFilter handleFilter={this.handleFilter} />
         </section>
-        <OurCoffeeProductArr
-          // filteredData={this.state.filteredData}
-          filteredData={filteredData}
-          handleCardClick={this.handleCardClick}
+        <SectionProductCards
+        // filteredData={this.state.filteredData}
+        // filteredData={filteredData}
+        // handleCardClick={this.handleCardClick}
         />
         <Header />
         <div className="our-coffee__black-been">
