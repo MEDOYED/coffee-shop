@@ -12,28 +12,28 @@ const SectionAboutProduct = () => {
   const cardDataByID = dataProductCard.find(item => item.id === Number(id));
 
   return (
-    <div className="container product-about-it">
+    <div className="section-about-product">
       <img
-        className="product-about-it__img"
+        className="section-about-product__img"
         src={cardDataByID?.src}
         alt={cardDataByID?.alt}
       />
-      <div className="product-about-it__content">
-        <h2 className="product-about-it__title">About it</h2>
+      <div className="section-about-product__content">
+        <h2 className="section-about-product__title">About it</h2>
         <BlackBeen />
-        <div className="product-about-it__country">
-          <span className="product-about-it__country--bold">Country:</span>
+        <div className="section-about-product__country">
+          <span className="section-about-product__country--bold">Country:</span>
           {cardDataByID?.country}
         </div>
-        <p className="product-about-it__description">
-          <span className="product-about-it__description--bold">
+        <p className="section-about-product__description">
+          <span className="section-about-product__description--bold">
             Description:
           </span>
           {cardDataByID?.description}
         </p>
-        <div className="product-about-it__price">
+        <div className="section-about-product__price">
           Price:
-          <span className="product-about-it__price--second-word">
+          <span className="section-about-product__price--second-word">
             {cardDataByID?.price}
           </span>
         </div>
