@@ -21,7 +21,7 @@ ReactDOM.createRoot(root).render(
           <Route path="/" element={<PageHome />} />
           <Route path="/for" element={<PagePleasure />} />
           <Route path="/our" element={<OurCoffee />} />
-          <Route path="/product/:id" element={<ProductInfo />} />
+          <Route path="/product/:id" element={<PageProductInfo />} />
         </Route>
       </Routes>
     </BrowserRouter>
