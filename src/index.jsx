@@ -7,7 +7,7 @@ import App from "./app/app";
 import PageHome from "./pages/PageHome/PageHome";
 import PagePleasure from "./pages/PagePleasure/PagePleasure";
 import OurCoffee from "./pages/our-coffee/our-coffee";
-import ProductInfo from "./pages/product-info/product-info";
+import PageProductInfo from "./pages/PageProductInfo/PageProductInfo";
 
 import "./index.scss";
 

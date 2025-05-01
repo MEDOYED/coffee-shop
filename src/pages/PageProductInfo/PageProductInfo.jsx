@@ -6,7 +6,7 @@ import ProductAboutIt from "../../widgets/product-about-it/product-about-it";
 import BlackBeen from "../../shared/ui/black-been/black-been";
 import Header from "../../widgets/layout/Header/Header";
 
-import "./product-info.scss";
+import "./PageProductInfo.scss";
 
 class ProductInfo extends Component {
   render() {
