@@ -2,11 +2,11 @@ import SectionProductCards from "../../../../widgets/sections/SectionProductCard
 
 import "./SectionOurBest.scss";
 
-const SectionOurBest = () => {
+const SectionOurBest = ({ cardsLimit }) => {
   return (
     <section className="section-our-best">
       <h2 className="section-our-best__title">Our best</h2>
-      <SectionProductCards />
+      <SectionProductCards cardsLimit={cardsLimit} />
     </section>
   );
 };

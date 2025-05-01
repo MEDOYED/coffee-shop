@@ -11,7 +11,7 @@ const PageHome = () => {
     <div className="coffee-house">
       <HeaderHome />
       <SectionAboutUs />
-      <SectionOurBest />
+      <SectionOurBest cardsLimit={3} />
       <Header theme={"black"} />
       <BlackBeen />
     </div>
