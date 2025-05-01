@@ -9,6 +9,7 @@ const dataProductCard = [
     description: "Solimo Coffee Beans 1 kg",
     country: "Brazil",
     price: "6.99$",
+    alt: "Solimo Coffee Beans from Brazil, 1 kg",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const dataProductCard = [
     description: "Presto Coffee Beans 2 kg",
     country: "Kenya",
     price: "9.99$",
+    alt: "Presto Coffee Beans from Kenya, 2 kg",
   },
   {
     id: 3,
@@ -23,6 +25,7 @@ const dataProductCard = [
     description: "AROMISTICO Coffee 1 kg",
     country: "Columbia",
     price: "6.99$",
+    alt: "Aromistico Coffee from Columbia, 1 kg",
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ const dataProductCard = [
     description: "AROMISTICO Coffee 1 kg",
     country: "Brazil",
     price: "11.99$",
+    alt: "Aromistico Coffee from Brazil, 1 kg",
   },
   {
     id: 5,
@@ -37,6 +41,7 @@ const dataProductCard = [
     description: "Solimo Coffee Beans 1 kg",
     country: "Kenya",
     price: "10.99$",
+    alt: "Solimo Coffee Beans from Kenya, 1 kg",
   },
   {
     id: 6,
@@ -44,6 +49,7 @@ const dataProductCard = [
     description: "Presto Coffee Beans 2 kg",
     country: "Columbia",
     price: "13.99$",
+    alt: "Presto Coffee Beans from Columbia, 2 kg",
   },
 ];
 
