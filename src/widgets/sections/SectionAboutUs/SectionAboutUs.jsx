@@ -1,4 +1,4 @@
-import BlackBeen from "../../../../shared/ui/black-been/black-been";
+import BlackBeen from "../../../shared/ui/black-been/black-been";
 
 import "./SectionAboutUs.scss";
 

@@ -1,6 +1,6 @@
-import ProductCard from "../cards/CardProduct/CardProduct";
+import ProductCard from "../../cards/CardProduct/CardProduct";
 
-import dataProductCard from "../../shared/data/dataProductCard";
+import dataProductCard from "../../../shared/data/dataProductCard";
 
 import "./SectionProductCards.scss";
 
