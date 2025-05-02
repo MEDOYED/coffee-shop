@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./app/app";
 import PageHome from "./pages/PageHome/PageHome";
 import PagePleasure from "./pages/PagePleasure/PagePleasure";
-import OurCoffee from "./pages/our-coffee/our-coffee";
+import PageOurCoffee from "./pages/PageOurCoffee/PageOurCoffee";
 import PageProductInfo from "./pages/PageProductInfo/PageProductInfo";
 
 import "./index.scss";
@@ -20,7 +20,7 @@ ReactDOM.createRoot(root).render(
         <Route path="/" element={<App />}>
           <Route path="/" element={<PageHome />} />
           <Route path="/for" element={<PagePleasure />} />
-          <Route path="/our" element={<OurCoffee />} />
+          <Route path="/our" element={<PageOurCoffee />} />
           <Route path="/product/:id" element={<PageProductInfo />} />
         </Route>
       </Routes>
