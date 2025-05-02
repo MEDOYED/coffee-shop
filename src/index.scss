@@ -125,7 +125,7 @@ a {
   font-style: normal;
   src:
     local("Marienda"),
-    url("./assets/fonts/Merienda-Regular.ttf") format(truetype);
+    url("./shared/assets/fonts/Merienda-Regular.ttf") format(truetype);
   font-display: swap;
 }
 
@@ -135,7 +135,7 @@ a {
   font-style: normal;
   src:
     local("Marienda"),
-    url("./assets/fonts/Merienda-Bold.ttf") format(truetype);
+    url("./shared/assets/fonts/Merienda-Bold.ttf") format(truetype);
   font-display: swap;
 }
 
