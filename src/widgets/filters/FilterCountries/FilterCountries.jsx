@@ -1,12 +1,12 @@
 import "./FilterCountries.scss";
 
-const FilterCountries = () => {
+const FilterCountries = ({ onChangeCountry }) => {
   return (
     <div className="aob-filter">
       <div className="aob-filter__text">Or filter</div>
       <button
         onClick={() => {
-          handleFilter("Brazil");
+          onChangeCountry("Brazil");
         }}
         className="aob-filter__btn"
       >
@@ -14,7 +14,7 @@ const FilterCountries = () => {
       </button>
       <button
         onClick={() => {
-          handleFilter("Kenya");
+          onChangeCountry("Kenya");
         }}
         className="aob-filter__btn"
       >
@@ -22,13 +22,16 @@ const FilterCountries = () => {
       </button>
       <button
         onClick={() => {
-          handleFilter("Columbia");
+          onChangeCountry("Columbia");
         }}
         className="aob-filter__btn"
       >
         Columbia
       </button>
-      <button onClick={() => handleFilter("All")} className="aob-filter__btn">
+      <button
+        onClick={() => onChangeCountry("All")}
+        className="aob-filter__btn"
+      >
         All
       </button>
     </div>
