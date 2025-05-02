@@ -1,7 +1,7 @@
 import OurCoffeHeader from "../../widgets/our-coffee-header/our-coffee-header";
 import AboutOurBeans from "../../widgets/about-our-beans/about-our-beans";
 import AobSearchPanel from "../../widgets/aob-search-panel/aob-search-panel";
-import AobFilter from "../../widgets/aob-filter/aob-filter";
+import FilterCountries from "../../widgets/filters/FilterCountries/FilterCountries";
 import SectionProductCards from "../../widgets/sections/SectionProductCards/SectionProductCards";
 import Header from "../../widgets/layout/Header/Header";
 import BlackBeen from "../../shared/ui/black-been/black-been";
@@ -60,7 +60,7 @@ const PageOurCoffee = () => {
       <AboutOurBeans />
       <section className="our-coffee__fiter">
         <AobSearchPanel onUpdateSearch={term => this.onUpdateSearch(term)} />
-        <AobFilter handleFilter={this.handleFilter} />
+        <FilterCountries />
       </section>
       <SectionProductCards
       // filteredData={this.state.filteredData}
