@@ -1,5 +1,5 @@
 import OurCoffeHeader from "../../widgets/our-coffee-header/our-coffee-header";
-import SectionAboutProduct from "../../widgets/SectionAboutProduct/SectionAboutProduct";
+import SectionAboutProduct from "../../widgets/sections/SectionAboutProduct/SectionAboutProduct";
 import BlackBeen from "../../shared/ui/black-been/black-been";
 import Header from "../../widgets/layout/Header/Header";
 

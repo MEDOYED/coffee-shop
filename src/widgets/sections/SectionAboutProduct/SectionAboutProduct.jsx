@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 
-import BlackBeen from "../../shared/ui/black-been/black-been";
+import BlackBeen from "../../../shared/ui/black-been/black-been";
 
-import dataProductCard from "../../shared/data/dataProductCard";
+import dataProductCard from "../../../shared/data/dataProductCard";
 
 import "./SectionAboutProduct.scss";
 
