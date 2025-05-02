@@ -25,8 +25,8 @@ const SectionProductCards = ({ cardsLimit, currentCountry }) => {
   return (
     <div className="aob-products-arr">
       <ul className="aob-products-arr__item">
-        {filteredByCountryCards.map((item, index) => (
-          <ProductCard key={index} item={item} hasShadow hasCountry />
+        {filteredByCountryCards.map(item => (
+          <ProductCard key={item.id} item={item} hasShadow hasCountry />
         ))}
       </ul>
     </div>
