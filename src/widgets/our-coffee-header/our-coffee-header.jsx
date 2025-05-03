@@ -4,7 +4,7 @@ import headerImg from "../../shared/assets/img/our-coffee/our-coffee-header-img.
 
 import "./our-coffee-header.scss";
 
-class OurCoffeHeader extends Component {
+class OurCoffeeHeader extends Component {
   render() {
     return (
       <div className="our-coffee-header">
@@ -19,4 +19,4 @@ class OurCoffeHeader extends Component {
   }
 }
 
-export default OurCoffeHeader;
+export default OurCoffeeHeader;

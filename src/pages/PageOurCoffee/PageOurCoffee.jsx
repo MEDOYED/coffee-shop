@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import OurCoffeHeader from "../../widgets/our-coffee-header/our-coffee-header";
+import OurCoffeeHeader from "../../widgets/our-coffee-header/our-coffee-header";
 import AboutOurBeans from "../../widgets/about-our-beans/about-our-beans";
 import AobSearchPanel from "../../widgets/aob-search-panel/aob-search-panel";
 import FilterCountries from "../../widgets/filters/FilterCountries/FilterCountries";
@@ -15,7 +15,7 @@ const PageOurCoffee = () => {
 
   return (
     <div className="container">
-      <OurCoffeHeader />
+      <OurCoffeeHeader />
       <AboutOurBeans />
       <section className="our-coffee__fiter">
         <AobSearchPanel />
