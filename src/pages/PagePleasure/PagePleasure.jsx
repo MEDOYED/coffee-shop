@@ -11,16 +11,15 @@ import "./PagePleasure.scss";
 
 const PagePleasure = () => {
   return (
-    <main>
+    <main className="page-pleasure">
       <SectionHero imageSrc={heroImg} title={"For your pleasure"} />
-      <section className="fyp__about-section">
+      <section className="page-pleasure__section-about">
         <FypAbout />
       </section>
-      <section className="fyp__products"></section>
       <SectionProductCards />
       <ProductCard />
       <Header />
-      <div className="fyp__black-been">
+      <div className="page-pleasure__black-been">
         <BlackBeen />
       </div>
     </main>

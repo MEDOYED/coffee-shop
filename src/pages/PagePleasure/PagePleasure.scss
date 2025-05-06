@@ -1,12 +1,10 @@
-.fyp__about-section {
-  margin-bottom: 60px;
-}
+.page-pleasure {
+  &__section-about {
+    margin-bottom: 60px;
+  }
 
-.fyp__products {
-  margin-bottom: 60px;
-}
-
-.fyp__black-been {
-  margin-top: 30px;
-  padding-bottom: 20px;
+  &__black-been {
+    margin-top: 30px;
+    padding-bottom: 20px;
+  }
 }
