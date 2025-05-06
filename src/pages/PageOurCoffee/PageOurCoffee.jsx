@@ -16,19 +16,19 @@ const PageOurCoffee = () => {
   const [currentCountry, setCurrentCountry] = useState("All");
 
   return (
-    <div className="container">
+    <main className="page-our-coffee">
       <SectionHero imageSrc={headerImg} title={"Our Coffee"} />
       <AboutOurBeans />
-      <section className="our-coffee__fiter">
+      <section className="page-our-coffee__fiter">
         <AobSearchPanel />
         <FilterCountries onChangeCountry={setCurrentCountry} />
       </section>
       <SectionProductCards currentCountry={currentCountry} />
       <Header />
-      <div className="our-coffee__black-been">
+      <div className="page-our-coffee__black-been">
         <BlackBeen />
       </div>
-    </div>
+    </main>
   );
 };
 

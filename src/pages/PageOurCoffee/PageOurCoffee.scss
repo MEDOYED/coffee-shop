@@ -1,11 +1,13 @@
-.our-coffee__fiter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 60px;
-}
+.page-our-coffee {
+  &__fiter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+  }
 
-.our-coffee__black-been {
-  margin-top: 30px;
-  padding-bottom: 20px;
+  &__black-been {
+    margin-top: 30px;
+    padding-bottom: 20px;
+  }
 }
