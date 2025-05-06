@@ -1,5 +1,13 @@
-.our-coffee-header {
+.section-hero {
   position: relative;
+
+  &__img {
+    position: relative;
+    left: 50%;
+    width: 100vw;
+    margin-left: -50vw;
+    height: 100%;
+  }
 
   &__title {
     position: absolute;
