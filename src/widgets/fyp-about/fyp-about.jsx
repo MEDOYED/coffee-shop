@@ -18,7 +18,7 @@ class FypAbout extends Component {
             <h2 className="fyp-about__heading">About our goods</h2>
             <BlackBeen />
             <p className="fyp-about__text">
-              Extremity sweetness difficult behaviour he of. On disposal of as
+              Extremity ssweetness difficult behaviour he of. On disposal of as
               landlord horrible. <br /> <br /> Afraid at highly months do things
               on at. Situation recommend objection do intention <br /> so
               questions. <br /> As greatly removed calling pleased improve an.
